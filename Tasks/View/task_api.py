@@ -32,8 +32,7 @@ class TaskViewSet(ModelViewSet):
     def get_queryset(self):
         
         project_id = self.kwargs.get('project_pk')
-        
-
+    
         # project id exist then , retrieve related objects , otherwise return all 
         if project_id:
             return  TaskModel.objects.filter(Project_id=project_id)

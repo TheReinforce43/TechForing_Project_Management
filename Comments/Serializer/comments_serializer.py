@@ -19,6 +19,12 @@ class CreateCommentSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+    def create(self,validated_data):
+        # handle task id custom way 
+
+        return CommentModel.objects.create(**validated_data)
+
+
 
 # Get Comments  Serializer
 
