@@ -29,8 +29,8 @@ This project is a RESTful API for managing users, projects, tasks, and comments 
 
 ### Tasks
 
-- **List Tasks**: `GET /api/projects/{project_id}/tasks/`
-- **Create Task**: `POST /api/projects/{project_id}/tasks/`
+- **List Tasks**: `GET /api/projects/projects/{project_id}/tasks/`  
+- **Create Task**: `POST /api/projects/projects/{project_id}/tasks/`
 - **Retrieve Task**: `GET /api/tasks/{id}/`
 - **Update Task**: `PUT/PATCH /api/tasks/{id}/`
 - **Delete Task**: `DELETE /api/tasks/{id}/`
@@ -47,8 +47,8 @@ This project is a RESTful API for managing users, projects, tasks, and comments 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/yourproject.git
-    cd yourproject
+    git clone [https://github.com/yourusername/yourproject.git](https://github.com/TheReinforce43/TechForing_Project_Management.git)
+    cd techforing_backend
     ```
 
 2. Create a virtual environment and activate it:
