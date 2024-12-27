@@ -27,11 +27,11 @@ from django.conf.urls.static import static  # new
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('user/',include('User.urls')),
-    path('projects/',include('Project.urls')),
-    path('comments/',include('Comments.urls')),
-    path('tasks/',include('Tasks.urls')),
-    path('project_member/',include('Project_member.urls')),
+    path('api/user/',include('User.urls')),
+    path('api/projects/',include('Project.urls')),
+    path('api/comments/',include('Comments.urls')),
+    path('api/tasks/',include('Tasks.urls')),
+    path('api/project_member/',include('Project_member.urls')),
 
 ]
 

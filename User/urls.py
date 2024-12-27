@@ -16,7 +16,7 @@ router.register('users', UserAPIViewSet,basename='users')
 
 
 urlpatterns = [
-    path('signup/',UserSignUpView.as_view(),name='signup'),
+    path('register/',UserSignUpView.as_view(),name='signup'),
     path('login/',UserLoginAPIView.as_view(),name='login'),
     path('',include(router.urls))
 ]
