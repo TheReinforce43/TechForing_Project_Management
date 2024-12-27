@@ -18,6 +18,12 @@ class CreateTaskSerializer(serializers.ModelSerializer):
         fields='__all__'
 
 
+    def create(self,validated_data):
+        # handle project id customly 
+
+        return TaskModel.objects.create(**validated_data)
+
+
 # Get Task Serializer
 
 

@@ -9,6 +9,8 @@ from Comments.Serializer.comments_serializer import (
 )
 
 
+# this is comment model view set for CRUD Operations
+
 class CommentViewSet(ModelViewSet):
     queryset = CommentModel.objects.all()
 
