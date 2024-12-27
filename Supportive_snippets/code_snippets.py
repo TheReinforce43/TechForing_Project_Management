@@ -2,6 +2,7 @@
 """
 Status: String (To Do, In Progress, Done)
 Priority: String (Low, Medium, High)
+Role: String (Admin, Member)
 """
 
 status_snippets=(
@@ -14,4 +15,9 @@ priority_snippets=(
     ('Low','Low'),
     ('Medium','Medium'),
     ('High','High')
+)
+
+role_snippets=(
+    ('Admin','Admin'),
+    ('Member','Member')
 )
