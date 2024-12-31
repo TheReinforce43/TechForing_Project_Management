@@ -11,9 +11,9 @@ from User.Serializer.user_support_serializer import UserSerializer
 
 class UserAPIViewSet(ModelViewSet):
     queryset = Users.objects.all()
-    
+
     serializer_class = UserSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
    
 
     def partial_update(self, request, *args, **kwargs):
