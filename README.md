@@ -15,9 +15,9 @@ This project is a RESTful API for managing users, projects, tasks, and comments 
 
 - **Register User**: `POST /user/users/signup/`
 - **Login User**: `POST /user/users/login/`
-- **Get User Details**: `GET /api/users/{id}/`
-- **Update User**: `PUT/PATCH /api/users/{id}/`
-- **Delete User**: `DELETE /api/users/{id}/`
+- **Get User Details**: `GET /api/user/users/{id}/`
+- **Update User**: `PUT/api/user/users/{id}/`
+- **Delete User**: `DELETE /api/user/users/{id}/`
 
 ### Projects
 
