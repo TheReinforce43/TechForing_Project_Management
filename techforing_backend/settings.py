@@ -13,8 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from datetime import timedelta
 from pathlib import Path
 import environ
-# env = environ.Env()
-# environ.Env.read_env()
+
 import os 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -40,7 +39,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://techforing-project-management.onrender.com/','http://127.0.0.1:8000/']
+ALLOWED_HOSTS = ['techforing-project-management.onrender.com','http://127.0.0.1:8000/']
 
 # print("Loaded SECRET_KEY:", env('SECRET_KEY', default='Not Set'))
 
