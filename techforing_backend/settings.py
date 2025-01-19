@@ -42,6 +42,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['https://techforing-project-management.onrender.com/','http://127.0.0.1:8000/']
 
+# print("Loaded SECRET_KEY:", env('SECRET_KEY', default='Not Set'))
 
 # Application definition
 
@@ -125,6 +126,12 @@ WSGI_APPLICATION = "techforing_backend.wsgi.application"
 #     }
 # }
 
+
+
+# Database configuration
+DATABASES = {
+    'default': env.db(),  # This will automatically parse the DATABASE_URL
+}
 
 
 # AUTHENTICATION_BACKENDS = [
@@ -225,29 +232,3 @@ AUTH_USER_MODEL = 'User.Users'
 
 
 
-
-# # Add these at the top of your settings.py
-# import os
-# from dotenv import load_dotenv
-# from urllib.parse import urlparse
-
-# load_dotenv()
-
-# # Replace the DATABASES section of your settings.py with this
-# tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': tmpPostgres.path.replace('/', ''),
-#         'USER': tmpPostgres.username,
-#         'PASSWORD': tmpPostgres.password,
-#         'HOST': tmpPostgres.hostname,
-#         'PORT': 5432,
-#     }
-# }
-
-# Database configuration
-DATABASES = {
-    'default': env.db(),  # This will automatically parse the DATABASE_URL
-}

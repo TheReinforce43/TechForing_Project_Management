@@ -26,6 +26,7 @@ environ==1.0
 et-xmlfile==1.1.0
 executing==2.1.0
 Faker==18.11.2
+gunicorn==23.0.0
 idna==3.7
 ipykernel==6.29.5
 ipython==8.27.0
@@ -69,7 +70,7 @@ python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 python3-openid==3.2.0
 pytz==2024.1
-# pywin32==306
+pywin32==306
 PyYAML==6.0.2
 pyzmq==26.2.0
 requests==2.31.0
